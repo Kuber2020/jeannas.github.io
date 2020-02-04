@@ -88,6 +88,7 @@ header div h3 {
 
 section {
     background: url(../IMG/3.jpg);
+    height: 100%;
     padding: 0 15px 0;
 }
 
