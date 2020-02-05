@@ -88,14 +88,7 @@ header div h3 {
 }
 
 section {
-    padding: 15px 5px 0;
-}
-
-section article img {
-    border: 2px solid #000;
-    border-radius: 30px;
-    box-shadow: 1px 1px 3px #b282ff;
-    margin: 3px;
+    padding: 15px;
 }
 
 section p {
@@ -103,14 +96,21 @@ section p {
     color: #600000;
     font-size: 22px;
     text-align: center;
-}
-
-section article p {
-    text-align: left;
-    margin: auto 0 auto 12px;
+    margin: 0 0 20px 0;
 }
 
 section article {
-    display: flex;
-    justify-content: space-between;
+    height: 400px;
+}
+
+section article img {
+    border: 2px solid #000;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px #b282ff;
+    margin: 3px;
+    float: left;
+}
+
+section article p {
+    padding: 50px 0 0 0;
 }
