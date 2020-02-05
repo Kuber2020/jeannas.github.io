@@ -92,8 +92,6 @@ section {
 }
 
 section article img {
-    width: 350px;
-    height: 350px;
     border: 2px solid #000;
     border-radius: 30px;
     box-shadow: 1px 1px 3px #b282ff;
