@@ -142,3 +142,10 @@ div.achievements ul.list-style li img {
 div.achievements ul.list-style li img:hover {
     transform: scale(1.2);
 }
+
+
+@media all (max-width: 480px) {
+    header {
+        font-size: 30px;
+    }
+}
