@@ -100,7 +100,7 @@ section p {
 }
 
 section article {
-    height: 400px;
+    height: 450px;
 }
 
 section article img {
@@ -140,5 +140,5 @@ div.achievements ul.list-style li img {
 }
 
 div.achievements ul.list-style li img:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
