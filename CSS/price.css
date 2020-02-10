@@ -32,9 +32,10 @@ header ul.fixed {
     right: 0;
 }
 
-header ul li {
+header ul.fixed li {
     margin: 0 10px 10px 0;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
 
 header ul li i {
@@ -50,6 +51,7 @@ header ul li:hover i.fa-chevron-right {
 }
 
 header ul li a {
+    display: flex;
     color: #ffe600;
     transition: color 0.2s linear;
 }
@@ -58,9 +60,16 @@ header ul li a:hover {
     color: #767cff;
 }
 
-header ul li ul {
-    float: left;
+header ul.fixed li ul {
     display: none;
+    border-top: 30px solid transparent;
+    position: absolute;
+    right: 10px;
+}
+
+header ul.fixed li ul li {
+    border-top: 5px solid transparent;
+    margin: 5px 0 0 0;
 }
 
 header ul li:hover > ul {
@@ -124,4 +133,11 @@ section ul.list-style li img {
 
 section ul.list-style li img:hover {
     transform: scale(1.3);
+}
+
+
+@media (max-width: 480px) {
+    header {
+        font-size: 25px;
+    }
 }
