@@ -144,7 +144,7 @@ div.achievements ul.list-style li img:hover {
 }
 
 
-@media all (max-width: 480px) {
+@media (max-width: 480px) {
     header {
         font-size: 30px;
     }
