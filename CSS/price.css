@@ -23,7 +23,7 @@ header {
     font-size: 20px;
     color: #ffe600;
     text-shadow: 1px 1px 3px #000;
-    border-bottom: 3px solid #845cff;
+    border-bottom: 5px solid rgba(0, 0, 255, 0.1);
 }
 
 header ul.fixed {
@@ -136,7 +136,7 @@ section ul.list-style li img {
 }
 
 section ul.list-style li img:hover {
-    transform: scale(1.3);
+    transform: scale(1.15);
 }
 
 
@@ -155,5 +155,10 @@ section ul.list-style li img:hover {
 
     header ul.fixed li a {
         float: right;
+    }
+
+    header ul.fixed li ul li {
+        display: flex;
+        margin: 5px 0 0 0;
     }
 }

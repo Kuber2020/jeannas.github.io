@@ -124,26 +124,18 @@ section article img {
     float: left;
 }
 
-section article p {
-    padding: 25px 0 0 0;
-}
-
-div.achievements {
-    padding: 0 20px;
-}
-
-div.achievements ul.list-style {
+section ul.list-style {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-div.achievements ul.list-style li {
+section ul.list-style li {
     list-style: none;
     display: inline-block;
 }
 
-div.achievements ul.list-style li img {
+section ul.list-style li img {
     width: 250px;
     height: 200px;
     margin: 20px 15px 20px;
@@ -152,8 +144,8 @@ div.achievements ul.list-style li img {
     transition: transform 0.2s ease;
 }
 
-div.achievements ul.list-style li img:hover {
-    transform: scale(1.2);
+section ul.list-style li img:hover {
+    transform: scale(1.15);
 }
 
 
@@ -172,5 +164,10 @@ div.achievements ul.list-style li img:hover {
 
     header ul.fixed li a {
         float: right;
+    }
+
+    header ul.fixed li ul li {
+        display: flex;
+        margin: 5px 0 0 0;
     }
 }
