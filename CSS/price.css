@@ -18,7 +18,6 @@ header {
     background: url(../IMG/1.jpg) no-repeat center;
     width: 100%;
     height: 300px;
-    padding: 15px;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -30,28 +29,29 @@ header {
 header ul.fixed {
     position: fixed;
     right: 0;
+    margin: 20px 20px 0 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
 header ul.fixed li {
-    margin: 0 10px 10px 0;
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
+    margin: 0 10px 0 0;
 }
 
 header ul li i {
     color: #fff;
-    margin: 0 3px 0 0;
+    margin: 0 3px;
     transition: all 0.2s linear;
 }
 
-header ul li:hover i.fa-chevron-right {
+header ul.fixed li:hover i.fa-chevron-right {
     transform: rotate(180deg);
     text-shadow: -1px -1px 3px #000;
 
 }
 
 header ul li a {
-    display: flex;
     color: #ffe600;
     transition: color 0.2s linear;
 }
@@ -62,18 +62,22 @@ header ul li a:hover {
 
 header ul.fixed li ul {
     display: none;
-    border-top: 30px solid transparent;
+}
+
+header ul.fixed li:hover > ul {
+    display: inline-block;
+}
+
+header ul.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     position: absolute;
-    right: 10px;
+    top: 260px;
 }
 
-header ul.fixed li ul li {
-    border-top: 5px solid transparent;
-    margin: 5px 0 0 0;
-}
-
-header ul li:hover > ul {
-    display: block;
+header ul.bottom li {
+    margin: 0 5px;
 }
 
 header div {
@@ -138,6 +142,18 @@ section ul.list-style li img:hover {
 
 @media (max-width: 480px) {
     header {
-        font-size: 25px;
+        font-size: 23px;
+    }
+
+    header ul.fixed {
+        display: block;
+    }
+
+    header ul.fixed li {
+        display: block;
+    }
+
+    header ul.fixed li a {
+        float: right;
     }
 }
