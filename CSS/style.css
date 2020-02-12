@@ -27,6 +27,7 @@ header {
 }
 
 header ul.fixed {
+    z-index: 3;
     position: fixed;
     right: 0;
     margin: 20px 20px 0 0;
@@ -113,10 +114,12 @@ section p {
 }
 
 section article {
-    height: 450px;
+    height: 380px;
 }
 
 section article img {
+    width: 330px;
+    height: 330px;
     border: 2px solid #000;
     border-radius: 30px;
     box-shadow: 1px 1px 3px #b282ff;
@@ -124,32 +127,9 @@ section article img {
     float: left;
 }
 
-section ul.list-style {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-section ul.list-style li {
-    list-style: none;
-    display: inline-block;
-}
-
-section ul.list-style li img {
-    width: 250px;
-    height: 200px;
-    margin: 20px 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 1.5px #fff;
-    transition: transform 0.2s ease;
-}
-
-section ul.list-style li img:hover {
-    transform: scale(1.15);
-}
-
 
 @media (max-width: 480px) {
+
     header {
         font-size: 23px;
     }
@@ -169,5 +149,13 @@ section ul.list-style li img:hover {
     header ul.fixed li ul li {
         display: flex;
         margin: 5px 0 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    section article img {
+        float: none;
+        margin: 0 calc(50% - 165px);
     }
 }
