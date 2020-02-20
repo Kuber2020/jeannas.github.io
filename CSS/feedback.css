@@ -28,7 +28,7 @@ header {
 
 header ul.fixed {
     z-index: 3;
-    position: fixed;
+    position: absolute;
     right: 0;
     margin: 20px 20px 0 0;
     background: rgba(0, 0, 0, 0.5);
