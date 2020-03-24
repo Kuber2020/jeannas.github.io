@@ -1,4 +1,5 @@
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
@@ -18,7 +19,11 @@ header {
     background: url(../IMG/1.jpg) no-repeat center;
     width: 100%;
     height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     font-size: 20px;
     color: #ffe600;
@@ -43,10 +48,12 @@ header ul.fixed li {
 header ul li i {
     color: #fff;
     margin: 0 3px;
+    -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
 
 header ul.fixed li:hover i.fa-chevron-right {
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     text-shadow: -1px -1px 3px #000;
 
@@ -54,6 +61,7 @@ header ul.fixed li:hover i.fa-chevron-right {
 
 header ul li a {
     color: #ffe600;
+    -webkit-transition: color 0.2s linear;
     transition: color 0.2s linear;
 }
 
@@ -71,7 +79,11 @@ header ul.fixed li:hover > ul {
 
 header ul.bottom {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: absolute;
     top: 260px;
@@ -85,6 +97,7 @@ header div {
     position: absolute;
     left: 50%;
     top: 30%;
+    -webkit-transform: translate(-50%, -30%);
     transform: translate(-50%, -30%);
 }
 
@@ -117,11 +130,16 @@ section ul.list-style li img {
     height: 200px;
     margin: 20px 15px 20px;
     border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px 1.5px #fff;
     box-shadow: 0 0 10px 1.5px #fff;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
     transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 section ul.list-style li img:hover {
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
 }
 
@@ -145,6 +163,8 @@ section ul.list-style li img:hover {
     }
 
     header ul.fixed li ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin: 5px 0 0 0;
     }
