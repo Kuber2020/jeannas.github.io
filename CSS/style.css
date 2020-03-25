@@ -130,17 +130,32 @@ section article {
     height: 380px;
 }
 
+section article p.title {
+    text-shadow: 1px 1px 0 #fff;
+    color: #600000;
+    font-size: 22px;
+    text-align: left;
+    margin: 0 0 15px 30px;
+}
+
+section article ul {
+    margin: 0 0 15px 80px;
+}
+
+section article ul li {
+    list-style: disc;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
 section article img {
     width: 330px;
     height: 330px;
     border: 2px solid #000;
     border-radius: 30px;
-    -webkit-box-shadow: 1px 1px 3px #b282ff;
-    box-shadow: 1px 1px 3px #b282ff;
     margin: 3px;
     float: left;
 }
-
 
 @media (max-width: 480px) {
 
