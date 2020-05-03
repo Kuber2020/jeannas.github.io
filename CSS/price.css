@@ -129,6 +129,12 @@ section ul li {
     list-style: disc;
 }
 
+section ul.margin li {
+    margin: 0 0 10px 60px;
+    font-size: 20px;
+    list-style: disc;
+}
+
 section ul.list-style {
     margin: 0;
     padding: 0;
